@@ -4,10 +4,12 @@ Complete test data package for Tally Prime Silver with 3 years of realistic Indi
 
 ## 📦 What's Included
 
-- **3 Companies** with different industry types:
-  - **Trading Company** - Wholesale electronics trader (Mumbai)
-  - **Manufacturing Company** - FMCG manufacturer (Delhi)
-  - **Services Company** - IT consulting firm (Bangalore)
+- **2 Companies** with different industry types (READY TO USE):
+  - ✅ **Trading Company** - Wholesale electronics trader (Mumbai) - **COMPLETE**
+  - ✅ **Services Company** - IT consulting firm (Bangalore) - **COMPLETE**
+  
+- **1 Company** (Planned for future):
+  - ⏳ **Manufacturing Company** - FMCG manufacturer (Delhi) - _Coming soon_
   
 - **Data Coverage**: January 2023 - December 2025 (3 years)
 - **Volume**: 100-200 vouchers per month per company
@@ -73,13 +75,14 @@ tally-prime-test-data/
 - **Vouchers**: ~5,400 (150/month × 36 months)
 - **Primary Transactions**: Material purchase, Production, Sales
 
-### Services Company (IT Consulting)
+### Services Company (IT Consulting) ✅ **COMPLETE**
 - **Location**: Bangalore, Karnataka
 - **GSTIN**: 29AAACS9012E1Z1
-- **Ledgers**: 35+ (Service income, Client accounts, Operating expenses)
-- **Stock Items**: Minimal (mostly service-based)
-- **Vouchers**: ~3,600 (100/month × 36 months)
-- **Primary Transactions**: Service invoices, Professional expenses
+- **Ledgers**: 40+ (Service income, Client accounts, Operating expenses, Cost Centers)
+- **Stock Items**: N/A (Service-based company)
+- **Vouchers**: ~3,422 (Apr 2023 - Dec 2025)
+- **Primary Transactions**: Service invoices, Cloud charges, Salary payments
+- **Cost Centers**: 5 project-wise cost centers for tracking
 
 ## 🎯 Test Scenarios Covered
 

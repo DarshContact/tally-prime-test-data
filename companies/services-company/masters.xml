@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ENVELOPE>
+  <HEADER>
+    <VERSION>1</VERSION>
+    <TALLYREQUEST>Import Data</TALLYREQUEST>
+    <TYPE>Data</TYPE>
+    <ID>Masters</ID>
+  </HEADER>
+  <BODY>
+    <IMPORTDATA>
+      <REQUESTDESC>
+        <REPORTNAME>All Masters</REPORTNAME>
+        <STATICVARIABLES>
+          <SVCURRENTCOMPANY>Test Services Company</SVCURRENTCOMPANY>
+        </STATICVARIABLES>
+      </REQUESTDESC>
+      <REQUESTDATA>
+        <!-- Cash & Bank -->
+        <LEDGER NAME="Cash" PARENT="Cash-in-hand">
+          <OPENINGBALANCE>50000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="HDFC Bank" PARENT="Bank Accounts">
+          <OPENINGBALANCE>800000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <BANKDETAILS>
+            <BANKNAME>HDFC Bank</BANKNAME>
+            <BRANCHNAME>Koramangala Branch</BRANCHNAME>
+            <ACCOUNTNUMBER>50200098765432</ACCOUNTNUMBER>
+            <IFSCCODE>HDFC0001234</IFSCCODE>
+          </BANKDETAILS>
+        </LEDGER>
+        
+        <LEDGER NAME="ICICI Bank" PARENT="Bank Accounts">
+          <OPENINGBALANCE>450000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <BANKDETAILS>
+            <BANKNAME>ICICI Bank</BANKNAME>
+            <BRANCHNAME>Indiranagar Branch</BRANCHNAME>
+            <ACCOUNTNUMBER>023405009876</ACCOUNTNUMBER>
+            <IFSCCODE>ICIC0000234</IFSCCODE>
+          </BANKDETAILS>
+        </LEDGER>
+        
+        <!-- Sundry Debtors (Clients) -->
+        <LEDGER NAME="TechCorp Solutions Pvt Ltd" PARENT="Sundry Debtors">
+          <OPENINGBALANCE>125000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>TechCorp Solutions Pvt Ltd</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>Embassy Tech Village</ADDRESSLINE1>
+            <ADDRESSLINE2>Outer Ring Road</ADDRESSLINE2>
+            <CITY>Bangalore</CITY>
+            <STATE>Karnataka</STATE>
+            <PINCODE>560103</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>29AAACT1234P1Z5</GSTIN>
+          <STATENAME>Karnataka</STATENAME>
+        </LEDGER>
+        
+        <LEDGER NAME="GlobalInfotech Inc" PARENT="Sundry Debtors">
+          <OPENINGBALANCE>230000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>GlobalInfotech Inc</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>DLF Cyber City</ADDRESSLINE1>
+            <CITY>Gurgaon</CITY>
+            <STATE>Haryana</STATE>
+            <PINCODE>122002</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>06AAACG5678Q1Z3</GSTIN>
+          <STATENAME>Haryana</STATENAME>
+        </LEDGER>
+        
+        <LEDGER NAME="DataSoft Systems" PARENT="Sundry Debtors">
+          <OPENINGBALANCE>89000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>DataSoft Systems</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>HITEC City</ADDRESSLINE1>
+            <CITY>Hyderabad</CITY>
+            <STATE>Telangana</STATE>
+            <PINCODE>500081</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>36AAACD9012R1Z1</GSTIN>
+          <STATENAME>Telangana</STATENAME>
+        </LEDGER>
+        
+        <LEDGER NAME="CloudNine Technologies" PARENT="Sundry Debtors">
+          <OPENINGBALANCE>167000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>CloudNine Technologies</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>Bandra Kurla Complex</ADDRESSLINE1>
+            <CITY>Mumbai</CITY>
+            <STATE>Maharashtra</STATE>
+            <PINCODE>400051</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>27AAACC3456S1Z8</GSTIN>
+          <STATENAME>Maharashtra</STATENAME>
+        </LEDGER>
+        
+        <LEDGER NAME="StartupHub Innovations" PARENT="Sundry Debtors">
+          <OPENINGBALANCE>45000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>StartupHub Innovations</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>Connaught Place</ADDRESSLINE1>
+            <CITY>New Delhi</CITY>
+            <STATE>Delhi</STATE>
+            <PINCODE>110001</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>07AAACS7890T1Z2</GSTIN>
+          <STATENAME>Delhi</STATENAME>
+        </LEDGER>
+        
+        <!-- Sundry Creditors (Vendors) -->
+        <LEDGER NAME="AWS India Pvt Ltd" PARENT="Sundry Creditors">
+          <OPENINGBALANCE>95000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>Amazon Web Services India</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>Salarpuria Softzone</ADDRESSLINE1>
+            <CITY>Bangalore</CITY>
+            <STATE>Karnataka</STATE>
+            <PINCODE>560103</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>29AAACA1234U1Z6</GSTIN>
+          <STATENAME>Karnataka</STATENAME>
+        </LEDGER>
+        
+        <LEDGER NAME="Microsoft India" PARENT="Sundry Creditors">
+          <OPENINGBALANCE>145000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>Microsoft India Pvt Ltd</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>Microsoft Campus</ADDRESSLINE1>
+            <ADDRESSLINE2>Hyderabad</ADDRESSLINE2>
+            <CITY>Hyderabad</CITY>
+            <STATE>Telangana</STATE>
+            <PINCODE>500081</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>36AAACM5678V1Z4</GSTIN>
+          <STATENAME>Telangana</STATENAME>
+        </LEDGER>
+        
+        <LEDGER NAME="Google Cloud India" PARENT="Sundry Creditors">
+          <OPENINGBALANCE>78000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>Google Cloud India</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>DLF Building 10</ADDRESSLINE1>
+            <CITY>Gurgaon</CITY>
+            <STATE>Haryana</STATE>
+            <PINCODE>122002</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>06AAACG9012W1Z9</GSTIN>
+          <STATENAME>Haryana</STATENAME>
+        </LEDGER>
+        
+        <LEDGER NAME="Office Supplies Co" PARENT="Sundry Creditors">
+          <OPENINGBALANCE>12000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>Office Supplies Co</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>Commercial Street</ADDRESSLINE1>
+            <CITY>Bangalore</CITY>
+            <STATE>Karnataka</STATE>
+            <PINCODE>560001</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>29AAACO3456X1Z7</GSTIN>
+          <STATENAME>Karnataka</STATENAME>
+        </LEDGER>
+        
+        <!-- Service Income Ledgers -->
+        <LEDGER NAME="IT Consulting Income" PARENT="Sales Accounts">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <ISREVENUELEDGER>Yes</ISREVENUELEDGER>
+        </LEDGER>
+        
+        <LEDGER NAME="Software Development Income" PARENT="Sales Accounts">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <ISREVENUELEDGER>Yes</ISREVENUELEDGER>
+        </LEDGER>
+        
+        <LEDGER NAME="Maintenance & Support Income" PARENT="Sales Accounts">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <ISREVENUELEDGER>Yes</ISREVENUELEDGER>
+        </LEDGER>
+        
+        <LEDGER NAME="Cloud Services Income" PARENT="Sales Accounts">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <ISREVENUELEDGER>Yes</ISREVENUELEDGER>
+        </LEDGER>
+        
+        <!-- Expense Ledgers -->
+        <LEDGER NAME="Salary - Technical Staff" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Salary - Admin Staff" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Professional Fees" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Cloud Infrastructure Charges" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Software License Fees" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Office Rent" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Electricity & Water" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Internet & Telecom" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Travel Expenses" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Client Entertainment" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Training & Development" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Marketing & Advertising" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Bank Charges" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Depreciation" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <!-- GST Ledgers -->
+        <LEDGER NAME="CGST Output" PARENT="Duties & Taxes">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <TAXTYPE>CGST</TAXTYPE>
+          <TAXRATE>9</TAXRATE>
+        </LEDGER>
+        
+        <LEDGER NAME="SGST Output" PARENT="Duties & Taxes">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <TAXTYPE>SGST</TAXTYPE>
+          <TAXRATE>9</TAXRATE>
+        </LEDGER>
+        
+        <LEDGER NAME="IGST Output" PARENT="Duties & Taxes">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <TAXTYPE>IGST</TAXTYPE>
+          <TAXRATE>18</TAXRATE>
+        </LEDGER>
+        
+        <LEDGER NAME="CGST Input" PARENT="Duties & Taxes">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <TAXTYPE>CGST</TAXTYPE>
+          <TAXRATE>9</TAXRATE>
+        </LEDGER>
+        
+        <LEDGER NAME="SGST Input" PARENT="Duties & Taxes">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <TAXTYPE>SGST</TAXTYPE>
+          <TAXRATE>9</TAXRATE>
+        </LEDGER>
+        
+        <LEDGER NAME="IGST Input" PARENT="Duties & Taxes">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <TAXTYPE>IGST</TAXTYPE>
+          <TAXRATE>18</TAXRATE>
+        </LEDGER>
+        
+        <!-- Capital & Others -->
+        <LEDGER NAME="Capital Account" PARENT="Capital Account">
+          <OPENINGBALANCE>1500000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Drawings" PARENT="Capital Account">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Interest Income" PARENT="Indirect Incomes">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Round Off" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <!-- Cost Centers for Project Tracking -->
+        <COSTCATEGORY NAME="Projects">
+          <ALLOCATE>Yes</ALLOCATE>
+        </COSTCATEGORY>
+        
+        <COSTCENTER NAME="Project Alpha" PARENT="Projects">
+          <CATEGORY>Projects</CATEGORY>
+        </COSTCENTER>
+        
+        <COSTCENTER NAME="Project Beta" PARENT="Projects">
+          <CATEGORY>Projects</CATEGORY>
+        </COSTCENTER>
+        
+        <COSTCENTER NAME="Project Gamma" PARENT="Projects">
+          <CATEGORY>Projects</CATEGORY>
+        </COSTCENTER>
+        
+        <COSTCENTER NAME="Support & Maintenance" PARENT="Projects">
+          <CATEGORY>Projects</CATEGORY>
+        </COSTCENTER>
+        
+        <COSTCENTER NAME="Internal R&D" PARENT="Projects">
+          <CATEGORY>Projects</CATEGORY>
+        </COSTCENTER>
+        
+      </REQUESTDATA>
+    </IMPORTDATA>
+  </BODY>
+</ENVELOPE>
