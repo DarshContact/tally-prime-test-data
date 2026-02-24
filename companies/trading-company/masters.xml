@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ENVELOPE>
+  <HEADER>
+    <VERSION>1</VERSION>
+    <TALLYREQUEST>Import Data</TALLYREQUEST>
+    <TYPE>Data</TYPE>
+    <ID>Masters</ID>
+  </HEADER>
+  <BODY>
+    <IMPORTDATA>
+      <REQUESTDESC>
+        <REPORTNAME>All Masters</REPORTNAME>
+        <STATICVARIABLES>
+          <SVCURRENTCOMPANY>Test Trading Company</SVCURRENTCOMPANY>
+        </STATICVARIABLES>
+      </REQUESTDESC>
+      <REQUESTDATA>
+        <!-- LEDGERS -->
+        <LEDGER NAME="Cash" PARENT="Cash-in-hand">
+          <OPENINGBALANCE>100000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="HDFC Bank" PARENT="Bank Accounts">
+          <OPENINGBALANCE>500000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <BANKDETAILS>
+            <BANKNAME>HDFC Bank</BANKNAME>
+            <BRANCHNAME>Mumbai Main Branch</BRANCHNAME>
+            <ACCOUNTNUMBER>50200012345678</ACCOUNTNUMBER>
+            <IFSCTYPE>NEFT</IFSCTYPE>
+            <IFSCCODE>HDFC0001234</IFSCCODE>
+          </BANKDETAILS>
+        </LEDGER>
+        
+        <LEDGER NAME="ICICI Bank" PARENT="Bank Accounts">
+          <OPENINGBALANCE>350000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <BANKDETAILS>
+            <BANKNAME>ICICI Bank</BANKNAME>
+            <BRANCHNAME>Andheri Branch</BRANCHNAME>
+            <ACCOUNTNUMBER>023405001234</ACCOUNTNUMBER>
+            <IFSCCODE>ICIC0000234</IFSCCODE>
+          </BANKDETAILS>
+        </LEDGER>
+        
+        <!-- Sundry Debtors (Customers) -->
+        <LEDGER NAME="Acme Electronics Pvt Ltd" PARENT="Sundry Debtors">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>Acme Electronics Pvt Ltd</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>Shop No 12, Lamington Road</ADDRESSLINE1>
+            <ADDRESSLINE2>Mumbai Central</ADDRESSLINE2>
+            <CITY>Mumbai</CITY>
+            <STATE>Maharashtra</STATE>
+            <PINCODE>400008</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>27AAACA1234B1Z5</GSTIN>
+          <STATENAME>Maharashtra</STATENAME>
+        </LEDGER>
+        
+        <LEDGER NAME="TechWorld Solutions" PARENT="Sundry Debtors">
+          <OPENINGBALANCE>45000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>TechWorld Solutions</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>23, Nehru Place</ADDRESSLINE1>
+            <CITY>New Delhi</CITY>
+            <STATE>Delhi</STATE>
+            <PINCODE>110019</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>07AAACT5678C1Z3</GSTIN>
+          <STATENAME>Delhi</STATENAME>
+        </LEDGER>
+        
+        <LEDGER NAME="Digital Systems Inc" PARENT="Sundry Debtors">
+          <OPENINGBALANCE>78000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>Digital Systems Inc</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>45, Residency Road</ADDRESSLINE1>
+            <CITY>Bangalore</CITY>
+            <STATE>Karnataka</STATE>
+            <PINCODE>560025</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>29AAACD9012D1Z1</GSTIN>
+          <STATENAME>Karnataka</STATENAME>
+        </LEDGER>
+        
+        <LEDGER NAME="Sharma Electronics" PARENT="Sundry Debtors">
+          <OPENINGBALANCE>32000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>Sharma Electronics</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>78, FC Road</ADDRESSLINE1>
+            <CITY>Pune</CITY>
+            <STATE>Maharashtra</STATE>
+            <PINCODE>411004</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>27AAACS3456E1Z8</GSTIN>
+          <STATENAME>Maharashtra</STATENAME>
+        </LEDGER>
+        
+        <LEDGER NAME="Patel Trading Co" PARENT="Sundry Debtors">
+          <OPENINGBALANCE>56000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>Patel Trading Co</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>12, CG Road</ADDRESSLINE1>
+            <CITY>Ahmedabad</CITY>
+            <STATE>Gujarat</STATE>
+            <PINCODE>380009</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>24AAACP7890F1Z2</GSTIN>
+          <STATENAME>Gujarat</STATENAME>
+        </LEDGER>
+        
+        <!-- Sundry Creditors (Suppliers) -->
+        <LEDGER NAME="Samsung India Electronics Ltd" PARENT="Sundry Creditors">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>Samsung India Electronics Ltd</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>Plot 1, Sector 126</ADDRESSLINE1>
+            <CITY>Noida</CITY>
+            <STATE>Uttar Pradesh</STATE>
+            <PINCODE>201303</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>09AAACS1234G1Z6</GSTIN>
+          <STATENAME>Uttar Pradesh</STATENAME>
+        </LEDGER>
+        
+        <LEDGER NAME="LG Electronics India" PARENT="Sundry Creditors">
+          <OPENINGBALANCE>125000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>LG Electronics India</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>A-1, Industrial Area</ADDRESSLINE1>
+            <CITY>Gurgaon</CITY>
+            <STATE>Haryana</STATE>
+            <PINCODE>122015</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>06AAACL5678H1Z4</GSTIN>
+          <STATENAME>Haryana</STATENAME>
+        </LEDGER>
+        
+        <LEDGER NAME="Sony India Pvt Ltd" PARENT="Sundry Creditors">
+          <OPENINGBALANCE>89000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>Sony India Pvt Ltd</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>5th Floor, Tower A</ADDRESSLINE1>
+            <ADDRESSLINE2>Cyber City</ADDRESSLINE2>
+            <CITY>Gurgaon</CITY>
+            <STATE>Haryana</STATE>
+            <PINCODE>122002</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>06AAACS9012I1Z9</GSTIN>
+          <STATENAME>Haryana</STATENAME>
+        </LEDGER>
+        
+        <LEDGER NAME="Wholesale Electronics Hub" PARENT="Sundry Creditors">
+          <OPENINGBALANCE>67000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>Wholesale Electronics Hub</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>45, Lamington Road</ADDRESSLINE1>
+            <CITY>Mumbai</CITY>
+            <STATE>Maharashtra</STATE>
+            <PINCODE>400007</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>27AAACW3456J1Z7</GSTIN>
+          <STATENAME>Maharashtra</STATENAME>
+        </LEDGER>
+        
+        <LEDGER NAME="Mumbai Tech Distributors" PARENT="Sundry Creditors">
+          <OPENINGBALANCE>43000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <MAILINGNAME>Mumbai Tech Distributors</MAILINGNAME>
+          <ADDRESS>
+            <ADDRESSLINE1>78, Grant Road</ADDRESSLINE1>
+            <CITY>Mumbai</CITY>
+            <STATE>Maharashtra</STATE>
+            <PINCODE>400007</PINCODE>
+          </ADDRESS>
+          <GSTREGISTRATIONTYPE>Regular</GSTREGISTRATIONTYPE>
+          <GSTIN>27AAACM7890K1Z5</GSTIN>
+          <STATENAME>Maharashtra</STATENAME>
+        </LEDGER>
+        
+        <!-- Sales Ledgers -->
+        <LEDGER NAME="Sales - Local" PARENT="Sales Accounts">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <ISREVENUELEDGER>Yes</ISREVENUELEDGER>
+        </LEDGER>
+        
+        <LEDGER NAME="Sales - Interstate" PARENT="Sales Accounts">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <ISREVENUELEDGER>Yes</ISREVENUELEDGER>
+        </LEDGER>
+        
+        <!-- Purchase Ledgers -->
+        <LEDGER NAME="Purchase - Local" PARENT="Purchase Accounts">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Purchase - Interstate" PARENT="Purchase Accounts">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <!-- GST Ledgers -->
+        <LEDGER NAME="CGST Output" PARENT="Duties & Taxes">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <TAXTYPE>CGST</TAXTYPE>
+          <TAXRATE>9</TAXRATE>
+        </LEDGER>
+        
+        <LEDGER NAME="SGST Output" PARENT="Duties & Taxes">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <TAXTYPE>SGST</TAXTYPE>
+          <TAXRATE>9</TAXRATE>
+        </LEDGER>
+        
+        <LEDGER NAME="IGST Output" PARENT="Duties & Taxes">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <TAXTYPE>IGST</TAXTYPE>
+          <TAXRATE>18</TAXRATE>
+        </LEDGER>
+        
+        <LEDGER NAME="CGST Input" PARENT="Duties & Taxes">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <TAXTYPE>CGST</TAXTYPE>
+          <TAXRATE>9</TAXRATE>
+        </LEDGER>
+        
+        <LEDGER NAME="SGST Input" PARENT="Duties & Taxes">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <TAXTYPE>SGST</TAXTYPE>
+          <TAXRATE>9</TAXRATE>
+        </LEDGER>
+        
+        <LEDGER NAME="IGST Input" PARENT="Duties & Taxes">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+          <TAXTYPE>IGST</TAXTYPE>
+          <TAXRATE>18</TAXRATE>
+        </LEDGER>
+        
+        <!-- Expense Ledgers -->
+        <LEDGER NAME="Electricity Charges" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Rent Expense" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Salary Expense" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Transport Charges" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Office Expenses" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Internet & Phone" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Bank Charges" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <!-- Income Ledgers -->
+        <LEDGER NAME="Interest Income" PARENT="Indirect Incomes">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <LEDGER NAME="Discount Received" PARENT="Indirect Incomes">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <!-- Capital Account -->
+        <LEDGER NAME="Capital Account" PARENT="Capital Account">
+          <OPENINGBALANCE>1000000</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <!-- Drawings -->
+        <LEDGER NAME="Drawings" PARENT="Capital Account">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <!-- Round Off -->
+        <LEDGER NAME="Round Off" PARENT="Indirect Expenses">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+        <!-- Opening Balance Adjustment -->
+        <LEDGER NAME="Opening Balance Adjustment" PARENT="Suspense Account">
+          <OPENINGBALANCE>0</OPENINGBALANCE>
+          <OPENINGBALANCEDATE>20230401</OPENINGBALANCEDATE>
+        </LEDGER>
+        
+      </REQUESTDATA>
+    </IMPORTDATA>
+  </BODY>
+</ENVELOPE>
