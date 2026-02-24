@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+.DS_Store
+
+# Generated files (optional - uncomment if you don't want to commit generated XML)
+# companies/*/vouchers.xml
+# companies/*/masters.xml
+
+# Logs
+*.log
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
