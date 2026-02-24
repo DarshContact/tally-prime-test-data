@@ -117,6 +117,20 @@ See **IMPORT-GUIDE.md** for:
 - Data validation after import
 - Tally Prime version compatibility notes
 
+## 📊 Data Summary (Final)
+
+### Trading Company ✅
+- **Vouchers**: 5,595 transactions
+- **Period**: Apr 2023 - Dec 2025
+- **File Size**: 5.4 MB
+
+### Services Company ✅
+- **Vouchers**: 3,422 transactions
+- **Period**: Apr 2023 - Dec 2025
+- **File Size**: 2.7 MB
+
+**Total**: 9,017 vouchers across 2 companies!
+
 ## 🔧 Technical Details
 
 ### XML Format
